@@ -4,8 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Manager</title>
+    <script
+      src="https://kit.fontawesome.com/b6bca6c463.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Password Manager</h1>
+    <header>
+      <h1>
+        Password Manager
+      </h1>
+    </header>
+    <div class="container">
+      <form action="/" id="form">
+        <h2>
+          We need some inputs..
+        </h2>
+        <div class="row">
+          <div class="col-75">
+            <label for="keyword">Keyword</label>
+          </div>
+          <div class="col-25">
+            <input
+              type="text"
+              id="keyword"
+              name="keyword"
+              placeholder="Your keyword.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <label for="question1"
+              >What's the first letter of your father's name?</label
+            >
+          </div>
+          <div class="col-25">
+            <input
+              type="text"
+              id="question1"
+              name="question1"
+              placeholder="Your answer.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <label for="question2"
+              >What's the first letter of your mother's name?</label
+            >
+          </div>
+          <div class="col-25">
+            <input
+              type="text"
+              id="question2"
+              name="question2"
+              placeholder="Your answer.."
+            />
+          </div>
+        </div>
+        <div class="row" id="button">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+      <ol id="list">
+        <h2>Create password for:</h2>
+        <div class="items">
+          <p>Facebook</p>
+        </div>
+        <div class="items">
+          <p>Gmail</p>
+        </div>
+        <div class="items">
+          <p>Twitter</p>
+        </div>
+        <div class="items">
+          <p>Other..</p>
+        </div>
+      </ol>
+    </div>
+    <!-- Trigger/Open The Modal -->
+    <footer>
+      <h1 id="myBtn">Confirm -></h1>
+    </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+        <p>Some text in the Modal..</p>
+        <p>Some text in the Modal..</p>
+        <p>Some text in the Modal..</p>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
   </body>
 </html>
